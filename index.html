@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Spots App</title>
+  </head>
+  <body>
+    <section class="logo-section">
+      <img src="./assets/Logo.svg" alt="Logo" />
+    </section>
+
+    <section class="hero-section">
+      <div class="hero-img">
+        <img src="./assets/Avatar.png" alt="Bessie Coleman" />
+      </div>
+
+      <div class="hero-text">
+        <h1>Bessie Coleman</h1>
+        <p>Civil Aviator</p>
+        <div class="edit-profile">
+          <button class="edit">
+            <i class="fa-solid fa-pencil"></i> Edit Profile
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-btn">
+        <button class="new-post-btn">
+          <i class="fa-solid fa-plus"></i> New Post
+        </button>
+      </div>
+    </section>
+    <hr />
+    <main>
+      <section class="card-section">
+        <!-- <div class="card__1">
+          <div>
+            <img
+              src="assets/pexels-kassandre-pedro-8639743 1.png"
+              alt="pic__1"
+            />
+          </div>          
+          <div class="card_text">
+            <p>Val Thorens</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="card__2">
+          <div>
+            <img
+              src="assets/pexels-kassandre-pedro-8639743 2.png"
+              alt="pic__2"
+            />
+          </div>
+          <div class="card_text">
+            <p>Restaurant terrace</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="card__3">
+          <div>
+            <img
+              src="assets/pexels-kassandre-pedro-8639743 3.png"
+              alt="pic__3"
+            />
+          </div>
+          <div class="card_text">
+            <p>An outdoor cafe</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="card__4">
+          <div>
+            <img
+              src="assets/pexels-kassandre-pedro-8639743 4.png"
+              alt="pic_4"
+            />
+          </div>
+          <div class="card_text">
+            <p>A very long bridge, over the forest...</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="card__5">
+          <div>
+            <img
+              src="assets/pexels-kassandre-pedro-8639743 5.png"
+              alt="pic__5"
+            />
+          </div>
+          <div class="card_text">
+            <p>Tunnel with morning light</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <div class="card__6">
+          <div>
+            <img
+              src="assets/pexels-kassandre-pedro-8639743 6.png"
+              alt="pic__6"
+            />
+          </div>
+          <div class="card_text">
+            <p>Mountain house</p>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div> -->
+        
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>2023 © Spot</p>
+    </footer>
+
+    <div class="modal edit-modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Edit Profile</h2>
+        <form id="editProfileForm">
+
+        <div class="nameField">
+          <label for="name">Name:</label>
+          <input type="text" id="nameInput" required minlength="5" maxlength="20" />
+        </div>
+
+        <div class="jobField">
+          <label for="job">Job Title:</label>
+          <input type="text" id="jobInput" required minlength="5" maxlength="20" />
+        </div>
+
+        <div class="imgField">
+          <label for="profileImage">Upload Profile Image</label>
+          <input type="file" id="profileImageInput" accept="image/*">
+        </div>
+
+          <button type="submit" class="modal-btn">Save</button>
+         
+        </form>
+      </div>
+    </div>
+  
+
+
+    <div class="modal new-post-modal hidden">
+      <div class="modal-content">
+        <span class="close-btn new-post-close">&times;</span>
+        <h2>Create New Post</h2>
+        <form id="newPostForm">
+
+          <div id="title-field">
+           <label for="postTitle">Title:</label>
+           <input type="text" id="postTitle" required minlength="5" maxlength="50" />
+          </div>
+
+          <div class="imgField">
+          <label for="postImage">Image:</label>
+          <input type="file" id="postImage" accept="image/*" required>
+          </div>
+
+          <button type="submit" class="modal-btn">Post</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="preview-modal hidden">
+      <div class="preview-content">
+         <span class="close-preview">&times;</span>
+         <img id="previewImage" src="" alt="Preview">
+         <p id="previewTitle"></p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
