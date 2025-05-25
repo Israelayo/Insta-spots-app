@@ -1,8 +1,8 @@
 # 🌍 Spots App – Personal Version
 
-Welcome to my personal version of the *Spots App, originally a group assignment completed by *Circle 13 students at *AltSchool Africa, School of Engineering*.
+Welcome to my personal version of the *Spots App, originally a group task assigned to *Circle 13 students at *AltSchool Africa, School of Engineering*.
 
-While this project began as a team collaboration, I created this standalone version to *further develop my frontend and JavaScript skills*. It includes all core layouts from the original assignment, with added dynamic functionality that I built independently.
+While this project began as a team collaboration, I created this standalone version to *further develop my frontend and JavaScript skills*. It includes all core layouts from the original assignment, with added dynamic functionality that I built personally.
 
 ## 📌 Project Overview
 
@@ -29,15 +29,14 @@ Spots App is a responsive user interface inspired by a Figma design. Initially b
 
 ## 🚀 What's Next
 
-- Add image preview modal
+- Convert to React and TypeScript
 - Improve accessibility (keyboard navigation, ARIA roles)
-- Add localStorage to persist posts and profile data
-- Enhance error handling and form UX
+- Enable delete post feature
 
 ## 🤝 About the Group Assignment
 
 This project was originally created as part of a *Circle 13* team assignment at AltSchool Africa.  
-Alongside contributing to the group project, I built this version independently to practice advanced JavaScript concepts and demonstrate personal growth.
+Alongside contributing to the group project, I built this version personally to practice advanced JavaScript concepts and also for my personal growth.
 
 ---
 
